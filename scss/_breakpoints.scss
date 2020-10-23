@@ -1,0 +1,40 @@
+// These are commonly used breakpoints for web development
+// TODO : Add your own breakpoints if needed
+
+$bp-xsmall: 325px;
+$bp-small: 640px;
+$bp-medium: 768px;
+$bp-large: 1024px;
+$bp-xlarge: 1280px;
+$bp-xxlarge: 1366px;
+
+@mixin xsmall {
+  @media (min-width: $bp-xsmall) {
+    @content;
+  }
+}
+@mixin small {
+  @media (min-width: $bp-small) {
+    @content;
+  }
+}
+@mixin medium {
+  @media (min-width: $bp-medium) {
+    @content;
+  }
+}
+@mixin large {
+  @media (min-width: $bp-large) {
+    @content;
+  }
+}
+@mixin xlarge {
+  @media (min-width: $bp-xlarge) {
+    @content;
+  }
+}
+@mixin xxlarge {
+  @media (min-width: $bp-xxlarge) {
+    @content;
+  }
+}
